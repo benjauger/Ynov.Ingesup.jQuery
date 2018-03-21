@@ -1,0 +1,144 @@
+<html>
+    <head>
+        <title>AJAX & jQuery - Les S&eacute;lecteurs</title>
+        <link type="text/css" rel="stylesheet" href="./css/reset.css" />
+		<link type="text/css" rel="stylesheet" href="./css/base.css" />
+        <link type="text/css" rel="stylesheet" href="./css/selector.css" />
+        <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="./js/selector.js"></script>
+    </head>
+    <body>
+        <div class="body">
+            <h1>AJAX & jQuery - Les S&eacute;lecteurs</h1>
+            <div class="container clearfix">
+                <div class="menu left">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)">Espagne</a>
+                            <ul>
+                                <li><a href="javascript:void(0)">Barcelone</a></li>
+                                <li><a href="javascript:void(0)">Madrid</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">France</a>
+                            <ul>
+                                <li><a href="javascript:void(0)">Bordeaux</a></li>
+                                <li><a href="javascript:void(0)">Lyon</a></li>
+                                <li><a href="javascript:void(0)">Paris</a></li>
+                                <li><a href="javascript:void(0)">Toulouse</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Italie</a>
+                            <ul>
+                                <li><a href="javascript:void(0)">Naples</a></li>
+                                <li><a href="javascript:void(0)">Rome</a></li>
+                                <li><a href="javascript:void(0)">Turin</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content left">
+                    <fieldset class="register">
+                        <legend>fieldset</legend>
+                        <ul>
+                            <li>annee</li>
+                            <li><label for="B1"><input type="radio" id="B1" name="annee" value="B1" class="radio" />B1</label></li>
+                            <li><label for="B2"><input type="radio" id="B2" name="annee" value="B2" class="radio" checked="checked" />B2</label></li>
+                            <li><label for="B3"><input type="radio" id="B3" name="annee" value="B3" class="radio" />B3</label></li>
+                            <li><label for="MAST1"><input type="radio" id="MAST1" name="annee" value="MAST1" class="radio" />MAST1</label></li>
+                            <li><label for="MAST2"><input type="radio" id="MAST2" name="annee" value="MAST2" class="radio" />MAST2</label></li>
+                        </ul>
+                        <p>
+                            <label for="civilite">
+                                <span>#civilite</span>
+                                <select id="civilite" class="select">
+                                    <option value="mr">Mr.</option>
+                                    <option value="mc">Mme.</option>
+                                </select>
+                            </label>
+                        </p>
+                        <p>
+                            <label for="nom"><span>#nom</span><input type="text" id="nom" class="textbox" /></label>
+                        </p>
+                        <p>
+                            <label for="prenom"><span>#prenom</span><input type="text" id="prenom" class="textbox" /></label>
+                        </p>
+                        <p>
+                            <label for="date"><span>#date</span><input type="date" id="date" class="date" /></label>
+                        </p>
+                        <p>
+                            <label for="email"><span>#email</span><input type="text" id="email" class="textbox" /></label>
+                        </p>
+                        <p>
+                            <span>#stage</span><label for="stage"><input type="checkbox" id="stage" class="checkbox" />Oui</label>
+                        </p>
+                        <p class="text-right">
+                            <input type="button" class="button" value="Enregistrer" />
+                        </p>
+                    </fieldset>
+                    <table class="frameworks">
+                        <thead>
+                            <tr>
+                                <th colspan="2">.framework</th>
+                                <th>.version</th>
+                                <th>.size</th>
+                                <th>.license</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="logo"><img src="img/angular.png" /></td">
+                                <td class="framework"><a href="https://angularjs.org">AngularJS</a></td>
+                                <td class="version">1.6.7</td>
+                                <td class="size">165 kB</td>
+                                <td class="license">MIT</td>
+                            </tr>
+                            <tr>
+                                <td class="logo"><img src="img/extjs.png" /></td>
+                                <td class="framework">Ext JS</td>
+                                <td class="version">6</td>
+                                <td class="size">84 kB</td>
+                                <td class="license">GPL &amp; Commercial</td>
+                            </tr>
+                            <tr>
+                                <td class="logo"><img src="img/jquery.png" /></td>
+                                <td class="framework"><a href="https://jquery.com">jQuery</a></td>
+                                <td class="version">3.3.1</td>
+                                <td class="size">84 kB</td>
+                                <td class="license">MIT</td>
+                            </tr>
+                            <tr>
+                                <td class="logo"><img src="img/knockout.png" /></td>
+                                <td class="framework"><a href="http://knockoutjs.com">Knockout</a></td>
+                                <td class="version">3.4.2</td>
+                                <td class="size">22 kB</td>
+                                <td class="license">MIT</td>
+                            </tr>
+                            <tr>
+                                <td class="logo"><img src="img/react.png" /></td>
+                                <td class="framework"><a href="https://reactjs.org">React</a></td>
+                                <td class="version">16.2.0</td>
+                                <td class="size">98 kB</td>
+                                <td class="license">MIT</td>
+                            </tr>
+                            <tr>
+                                <td class="logo"><img src="img/vue.png" /></td>
+                                <td class="framework"><a href="https://vuejs.org/">Vue.js</a></td>
+                                <td class="version">2.5.13</td>
+                                <td class="size">84 kB</td>
+                                <td class="license">MIT</td>
+                            </tr>
+                        </tbody>
+                        <tfoot></tfoot>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="selector">
+            <input id="expression" type="text" class="textbox" placeholder="Appuyer sur Entr&eacute;e..." spellcheck="false" />
+            <label for="highlight"><input id="highlight" type="checkbox" class="checkbox" checked="checked" />Surligner</label>
+        </div>
+    </body>
+</html>

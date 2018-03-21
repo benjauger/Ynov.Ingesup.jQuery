@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <title>AJAX & jQuery - Le DOM</title>
+        <link type="text/css" rel="stylesheet" href="./css/reset.css" />
+		<link type="text/css" rel="stylesheet" href="./css/base.css" />
+        <link type="text/css" rel="stylesheet" href="./css/dom.css" />
+        <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="./js/dom.js"></script>
+    </head>
+    <body>
+        <div class="body">
+            <h1>AJAX & jQuery - Le DOM</h1>
+            <div class="header">
+                <button id="btnMenu">Menu</button>
+            </div>
+			<div class="container clearfix">
+                <div class="menu left">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)">Espagne</a>
+                            <ul>
+                                <li><a href="javascript:void(0)">Barcelone</a></li>
+                                <li><a href="javascript:void(0)">Madrid</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">France</a>
+                            <ul>
+                                <li><a href="javascript:void(0)">Bordeaux</a></li>
+                                <li><a href="javascript:void(0)">Lyon</a></li>
+                                <li><a href="javascript:void(0)">Paris</a></li>
+                                <li><a href="javascript:void(0)">Toulouse</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="javascript:void(0)">Italie</a>
+                            <ul>
+                                <li><a href="javascript:void(0)">Naples</a></li>
+                                <li><a href="javascript:void(0)">Rome</a></li>
+                                <li><a href="javascript:void(0)">Turin</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <div class="content left">
+                    <fieldset class="register">
+                        <legend>fieldset</legend>
+                        <ul>
+                            <li>annee</li>
+                            <li><label for="B1"><input type="radio" id="B1" name="annee" value="B1" class="radio" checked="checked" />B1</label></li>
+                            <li><label for="B2"><input type="radio" id="B2" name="annee" value="B2" class="radio" />B2</label></li>
+                            <li><label for="B3"><input type="radio" id="B3" name="annee" value="B3" class="radio" />B3</label></li>
+                            <li><label for="MAST1"><input type="radio" id="MAST1" name="annee" value="MAST1" class="radio" />MAST1</label></li>
+                            <li><label for="MAST2"><input type="radio" id="MAST2" name="annee" value="MAST2" class="radio" />MAST2</label></li>
+                        </ul>
+                        <p>
+                            <label for="civilite">
+                                <span>#civilite</span>
+                                <select id="civilite" class="select">
+                                    <option value=""></option>
+                                    <option value="mr">Mr.</option>
+                                    <option value="mc">Mme.</option>
+                                </select>
+                            </label>
+                        </p>
+                        <p>
+                            <label for="nom"><span>#nom</span><input type="text" id="nom" class="textbox" /></label>
+                        </p>
+                        <p>
+                            <label for="prenom"><span>#prenom</span><input type="text" id="prenom" class="textbox" /></label>
+                        </p>
+                        <p>
+                            <label for="date"><span>#date</span><input type="date" id="date" class="date" /></label>
+                        </p>
+                        <p>
+                            <label for="email"><span>#email</span><input type="text" id="email" class="textbox" /></label>
+                        </p>
+                        <p>
+                            <span>#stage</span><label for="stage"><input type="checkbox" id="stage" class="checkbox" />Oui</label>
+                        </p>
+                        <p class="actions">
+                            <button id="btnValidate">V&eacute;rifier</button>
+                            <button id="btnAdd">Ajouter</button>
+                        </p>
+                    </fieldset>
+                    <table id="persons" class="persons">
+                        <thead>
+                            <tr>
+                                <th><input id="chkAll" type="checkbox" /></th>
+                                <th>.annee</th>
+                                <th>.civilite</th>
+                                <th>.nom</th>
+                                <th>.prenom</th>
+                                <th>.date</th>
+                                <th>.email</th>
+                                <th>.stage</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="select"><input type="checkbox" /></td>
+                                <td class="annee">B1</td>
+                                <td class="civilite">mr</td>
+                                <td class="nom">Larre</td>
+                                <td class="prenom">Anthony</td>
+                                <td class="date">1982-11-03</td>
+                                <td class="email">anthony.larre@ynov.com</td>
+                                <td class="stage">true</td>
+                            </tr>
+                        </tbody>
+                        <tfoot></tfoot>
+                    </table>
+                    <button id="btnRemove">Supprimer</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

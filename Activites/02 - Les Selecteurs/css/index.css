@@ -1,0 +1,25 @@
+
+.body p {
+	font-size: 1em;
+	padding: 0 0 10px 0;
+}
+
+.body ol {
+	list-style: decimal outside;
+	padding: 25px 0 0 40px;
+}
+
+.body ul {
+	list-style: square outside;
+	padding: 8px 0 0 40px;
+}
+
+.body li {
+	padding: 15px 0;
+	font-size: 1.2em;
+}
+
+.body li li {
+	padding: 8px 0;
+	font-size: 0.8em;
+}

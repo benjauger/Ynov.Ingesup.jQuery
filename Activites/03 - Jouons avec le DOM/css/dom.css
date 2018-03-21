@@ -1,0 +1,145 @@
+
+button {
+    margin: 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.header {
+
+}
+
+.menu {
+    padding: 20px 40px;
+    background-color: #C1D4FF;
+}
+
+.menu ul {
+    list-style: circle inside;
+}
+
+.menu li {
+    padding: 0 0 20px 0;
+    font-size: 1.2em;
+}
+
+.menu li a {
+    font-weight: bold;
+}
+
+.menu ul ul {
+    margin-left: 10px;
+    list-style: square inside;
+}
+
+.menu li li {
+    padding: 10px 0 0 0;
+    font-size: 0.8em;
+}
+
+.menu li li a {
+    font-weight: normal;
+}
+
+.content {
+    padding: 20px 40px;
+}
+
+.register {
+    width: 560px;
+}
+
+.register ul {
+    margin: 20px 0;
+    list-style: none;
+}
+
+.register ul:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.register li {
+    float: left;
+    margin: 0 40px 0 0;
+    padding: 0;
+}
+
+.register li:last-child {
+    margin-right: 0;
+}
+
+.register p {
+    margin: 10px 0;
+}
+
+.register p span {
+    display: inline-block;
+    width: 200px;
+    line-height: 24px;
+}
+
+.register .button {
+}
+
+.register .checkbox {
+}
+
+.register .date {
+    width: 350px;
+	margin-left: 6px;
+}
+
+.register .radio {
+}
+
+.register .select {
+    width: 350px;
+}
+
+.register .textbox {
+    width: 350px;
+	margin-left: 6px;
+}
+
+.register .actions {
+    text-align: right;
+}
+
+.persons {
+    width: 850px;
+    margin: 20px 0 0 0;
+    border-width: 1px;
+    border-color: #333;
+    border-collapse: collapse;
+    font-size: 0.9em;
+}
+
+.persons th {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #333;
+    background-color: #D56A6A;
+    color: #FFF;
+}
+
+.persons tr:nth-child(even) td {
+    background-color: #F7CFCF;
+}
+
+.persons td {
+    border-width: 1px;
+    padding: 5px 15px;
+    border-style: solid;
+    border-color: #333;
+    background-color: #FFF;
+    vertical-align: middle;
+	text-align: center;
+}
+
+.highlight, .highlight * {
+    border-color: #FF6A00 !important;
+    color: #FF6A00 !important;
+}
