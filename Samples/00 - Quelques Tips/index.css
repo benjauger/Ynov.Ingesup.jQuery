@@ -1,0 +1,13 @@
+
+input {
+	margin:50px;
+	padding:5px 20px;
+	font-size:1.2em;
+	font-weight:bold;
+	color:#072C98;
+}
+
+input:hover {
+	color:#F00;
+	cursor:pointer;
+}

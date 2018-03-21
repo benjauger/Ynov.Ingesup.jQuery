@@ -1,0 +1,79 @@
+<html>
+    <head>
+        <title>AJAX & jQuery - Debugging</title>
+		<link type="text/css" rel="stylesheet" href="../../reset.css" />
+		<link type="text/css" rel="stylesheet" href="../../base.css" />
+		<link rel="stylesheet" href="../../_libs/highlight/styles/atom-one-dark.css">
+		<link type="text/css" rel="stylesheet" href="../index.css" />
+		<script type="text/javascript" src="../../_libs/highlight/highlight.pack.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+    </head>
+    <body>
+		<div class="body">
+			<h1>AJAX & jQuery - Debugging</h1>
+			<div class="container">
+				<div class="clearfix">
+					<div class="left">
+						<pre>
+							<code class="javascript">function onAlertClick() {
+	for (var i = 0; i < 3; i++) {
+		alert(i);
+	}
+}</code>
+						</pre>
+					</div>
+					<div class="left">
+						<input type="button" onclick="javascript:onAlertClick()" value="alert(...)" />
+					</div>
+				</div>
+				<div class="clearfix">
+					<div class="left">
+						<pre>
+							<code class="javascript">function onLogClick() {
+	for (var i = 0; i < 3; i++) {
+		console.log(i);
+	}
+}</code>
+						</pre>
+					</div>
+					<div class="left">
+						<input type="button" onclick="javascript:onLogClick()" value="console.log(...)" />
+					</div>
+				</div>
+				<div class="clearfix">
+					<div class="left">
+						<pre>
+							<code class="javascript">function onDebuggerClick() {
+	debugger;
+	for (var i = 0; i < 3; i++) {
+		continue;
+	}
+}</code>
+						</pre>
+					</div>
+					<div class="left">
+						<input type="button" onclick="javascript:onDebuggerClick()" value="debugger" />
+					</div>
+				</div>
+				<div class="clearfix">
+					<div class="left">
+						<pre>
+							<code class="javascript">function onDirClick() {
+	var person = {
+		name: 'Mr. Debug',
+		age: 21,
+		happy: true
+	};
+	
+	console.dir(person);
+}</code>
+						</pre>
+					</div>
+					<div class="left">
+						<input type="button" onclick="javascript:onDirClick()" value="console.dir(...)" />
+					</div>
+				</div>
+			</div>
+		</div>
+    </body>
+</html>

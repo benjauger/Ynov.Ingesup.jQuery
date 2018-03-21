@@ -1,0 +1,155 @@
+
+body {
+    margin: 8px;
+    font-family: verdana;
+    font-size: 18px;
+    background-color: #1F5FA0;
+    color: #333;
+}
+
+.clearfix {
+}
+
+.clearfix:after {
+    content: ".";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+
+h1 {
+    margin: 0;
+    padding: 25px 0;
+    font-size: 2.6em;
+    font-weight: bold;
+    color: #1F5FA0;
+    text-align: center;
+}
+
+a {
+    color: #072C98;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #7F0000;
+}
+
+a:visited {
+    color: #072C98;
+}
+
+fieldset {
+    padding: 0 18px;
+    border: solid 2px #007F0E;
+}
+
+legend {
+    margin: 0;
+    padding: 0 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #007F0E;
+}
+
+input {
+    font-size: 1em;
+}
+
+button:hover {
+    color: #7F0000;
+    cursor: pointer;
+}
+
+select {
+    font-size: 1em;
+}
+
+.body {
+    margin: 0 auto;
+    padding: 0 50px;
+    width: 1200px;
+    background-color: #FFF;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.green {
+    border-color: #007F0E !important;
+    color: #007F0E !important;
+}
+
+.orange {
+    border-color: #FF6A00 !important;
+    color: #FF6A00 !important;
+}
+
+.red {
+    border-color: #F00 !important;
+    color: #F00 !important;
+}
+
+.actions {
+    padding: 20px 0;
+}
+
+.actions div * {
+    font-size: 1.2em;
+    line-height: 1.5em;
+}
+
+.actions .textbox {
+    width: 300px;
+    height: 36px;
+}
+
+.actions select {
+    width: 200px;
+    height: 36px;
+}
+
+.actions button {
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+.actions a {
+    font-size: 0.9em;
+}
+
+.log {
+    position: relative;
+    height: 200px;
+    width: calc(100% - 20px);
+    padding: 5px 10px;
+    border: solid 1px #333;
+    overflow-y: auto;
+}
+
+.log .eraser {
+    display: none;
+    position: sticky;
+    top: 0;
+    float:right;
+    height: 30px;
+    width: 30px;
+    background-image: url('./_img/eraser.svg');
+    background-size: cover;
+    cursor: pointer;
+}
+
+.log p {
+    line-height: 1.2em;
+}
