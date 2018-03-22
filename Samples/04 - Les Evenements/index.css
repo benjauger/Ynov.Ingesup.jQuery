@@ -1,0 +1,54 @@
+
+.container {
+	padding-bottom: 40px;
+}
+
+.area {
+    height: 500px;
+    background-color: #DDD;
+}
+
+.area div {
+    position: relative;
+    padding: 5px;
+    border: solid 3px #333;
+    font-weight: bold;
+}
+
+.area .green {
+    top: 50px;
+    left: calc(50% - 200px);
+    height: 390px;
+    width: 390px;
+}
+
+.area .orange {
+    top: 40px;
+    left: calc(50% - 150px);
+    height: 260px;
+    width: 290px;
+}
+
+.area .red {
+    top: 40px;
+    left: calc(50% - 80px);
+    height: 130px;
+    width: 140px;
+}
+
+.log span {
+    display: inline-block;
+    width: 80px;
+}
+
+.log span:first-child {
+    width: 120px !important;
+}
+
+.log span:last-child {
+    width: auto;
+}
+
+.clickable:hover {
+    cursor: pointer;
+}

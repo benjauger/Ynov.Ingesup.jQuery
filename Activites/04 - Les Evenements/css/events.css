@@ -1,0 +1,63 @@
+
+.container {
+    padding: 0 0 20px 0;
+}
+
+.container .grid {
+}
+
+.container .grid .sports .date {
+    width: 120px;
+    text-align: center;
+}
+
+.container .grid .sports .sport {
+    width: 80px;
+    font-weight: bold;
+}
+
+.container .grid .sports .division {
+    width: 80px;
+    text-align: center;
+}
+
+.container .grid .sports .match {
+    width: 260px;
+    font-weight: bold;
+}
+
+.container .panel {
+    width: 400px;
+    margin: 0 0 0 20px;
+    padding: 0;
+}
+
+.container .panel .inner-panel {
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.container .panel fieldset p {
+    padding: 8px 0;
+}
+
+.container .panel fieldset p span {
+    font-size: 0.9em;
+}
+    
+.container .panel fieldset p span:first-child {
+    display: inline-block;
+    width: 100px;
+}
+
+.container .panel fieldset .date {
+    width: 150px;
+}
+
+.container .panel fieldset .textbox {
+    width: 150px;
+}
+
+.container .panel fieldset .select {
+    width: 150px;
+}

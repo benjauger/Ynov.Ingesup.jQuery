@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>AJAX & jQuery - Les Sélecteurs</title>
+        <link type="text/css" rel="stylesheet" href="../reset.css" />
+		<link type="text/css" rel="stylesheet" href="../base.css" />
+        <link type="text/css" rel="stylesheet" href="index.css" />
+        <script type="text/javascript" src="../_libs/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+    </head>
+    <body>
+        <div class="body">
+            <h1>AJAX & jQuery - Les Ev&eacute;nement</h1>
+            <div class="container clearfix">
+                <div class="area">
+                    <div class="green">.green
+                        <div class="orange">.orange
+                            <div class="red">.red</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="actions clearfix">
+                    <div class="left">
+                        <select id="Selector">
+                            <option>.green</option>
+                            <option selected="selected">.orange</option>
+                            <option>.red</option>
+                        </select>
+                        <select id="Event">
+                            <option>click</option>
+							<option>dblclick</option>
+                            <option>mouseenter</option>
+                            <option>mouseleave</option>
+							<option>mouseover</option>
+                            <option>mouseout</option>
+                        </select>
+                        <button id="On">Attacher</button>
+                        <button id="Off">D&eacute;tacher</button>
+                        <button id="Trigger">D&eacute;clencher</button>
+                    </div>
+                    <div class="right">
+                        <button id="Reset">R&eacute;initialiser</button>
+                    </div>
+                </div>
+                <div class="log"><div id="Eraser" class="eraser"></div></div>
+            </div>
+        </div>
+    </body>
+</html>

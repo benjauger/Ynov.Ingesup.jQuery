@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <title>AJAX & jQuery - Les Ev&eacute;nements</title>
+        <link type="text/css" rel="stylesheet" href="./css/reset.css" />
+        <link type="text/css" rel="stylesheet" href="./css/base.css" />
+        <link type="text/css" rel="stylesheet" href="./css/events.css" />
+        <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="./js/events.js"></script>
+    </head>
+    <body>
+		<div class="body">
+            <h1>AJAX & jQuery - Les Ev&eacute;nements</h1>
+            <div class="container clearfix">
+                <div class="left grid">
+                    <table id="Sports" class="sports">
+                        <thead>
+                            <tr><th>Date</th><th>Sport</th><th>Division</th><th>Match</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr data-date="2018-03-17" data-sport="rugby"><td class="date">17/03 14:45</td><td class="sport">Rugby</td><td class="division">Top 14</td><td class="match">Racing 92 - Stade Français</td></tr>
+                            <tr data-date="2018-03-17" data-sport="football"><td class="date">17/03 15:00</td><td class="sport">Football</td><td class="division">Ligue 2</td><td class="match">Reims - RC Lens</td></tr>
+                            <tr data-date="2018-03-17" data-sport="football"><td class="date">17/03 17:00</td><td class="sport">Football</td><td class="division">Ligue 1</td><td class="match">Bordeaux - Rennes</td></tr>
+                            <tr data-date="2018-03-17" data-sport="football"><td class="date">17/03 20:00</td><td class="sport">Football</td><td class="division">Ligue 1</td><td class="match">Angers - Caen</td></tr>
+                            <tr data-date="2018-03-17" data-sport="football"><td class="date">17/03 20:00</td><td class="sport">Football</td><td class="division">Ligue 1</td><td class="match">Toulouse - Strasbourg</td></tr>
+                            <tr data-date="2018-03-17" data-sport="football"><td class="date">17/03 20:00</td><td class="sport">Football</td><td class="division">Ligue 1</td><td class="match">Montpellier - Dijon</td></tr>
+                            <tr data-date="2018-03-17" data-sport="football"><td class="date">17/03 20:00</td><td class="sport">Football</td><td class="division">Ligue 1</td><td class="match">Amiens - Troyes</td></tr>
+                            <tr data-date="2018-03-17" data-sport="rugby"><td class="date">17/03 20:30</td><td class="sport">Rugby</td><td class="division">Top 14</td><td class="match">La Rochelle - Lyon OU</td></tr>
+                            <tr data-date="2018-03-17" data-sport="rugby"><td class="date">17/03 20:30</td><td class="sport">Rugby</td><td class="division">Top 14</td><td class="match">Agen - Union Bordeaux Begles</td></tr>
+                            <tr data-date="2018-03-17" data-sport="rugby"><td class="date">17/03 20:30</td><td class="sport">Rugby</td><td class="division">Top 14</td><td class="match">Oyonnax Rugby - Toulon</td></tr>
+                            <tr data-date="2018-03-17" data-sport="rugby"><td class="date">17/03 20:45</td><td class="sport">Rugby</td><td class="division">Top 14</td><td class="match">Clermont Auvergne - Pau</td></tr>
+                            <tr data-date="2018-03-18" data-sport="rugby"><td class="date">18/03 12:30</td><td class="sport">Rugby</td><td class="division">Top 14</td><td class="match">Castres Olympique - Brive</td></tr>
+                            <tr data-date="2018-03-18" data-sport="football"><td class="date">18/03 13:00</td><td class="sport">Football</td><td class="division">Ligue 1</td><td class="match">Nice - PSG</td></tr>
+                            <tr data-date="2018-03-18" data-sport="rugby"><td class="date">18/03 14:15</td><td class="sport">Rugby</td><td class="division">Pro D2</td><td class="match">Stade Montois - Grenoble</td></tr>
+                            <tr data-date="2018-03-18" data-sport="football"><td class="date">18/03 15:00</td><td class="sport">Football</td><td class="division">Ligue 1</td><td class="match">Metz - Nantes</td></tr>
+                            <tr data-date="2018-03-18" data-sport="rugby"><td class="date">18/03 16:50</td><td class="sport">Rugby</td><td class="division">Top 14</td><td class="match">Toulouse - Montpellier Rugby</td></tr>
+                            <tr data-date="2018-03-18" data-sport="football"><td class="date">18/03 17:00</td><td class="sport">Football</td><td class="division">Ligue 1</td><td class="match">Saint-Etienne - Guingamp</td></tr>
+                            <tr data-date="2018-03-18" data-sport="football"><td class="date">18/03 21:00</td><td class="sport">Football</td><td class="division">Ligue 1</td><td class="match">Marseille - Lyon</td></tr>
+                            <tr data-date="2018-03-19" data-sport="football"><td class="date">19/03 20:45</td><td class="sport">Football</td><td class="division">Ligue 2</td><td class="match">Brest - N&icirc;mes</td></tr>
+                            <tr data-date="2018-03-22" data-sport="rugby"><td class="date">22/03 20:45</td><td class="sport">Rugby</td><td class="division">Pro D2</td><td class="match">US Dax - AS Beziers</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="left panel">
+                    <div class="inner-panel filter">
+                        <fieldset>
+                            <legend>Filtre</legend>
+                            <p>
+                                <label for="Date">
+                                    <span>Date</span>
+                                    <input type="date" id="Date" class="date" />
+                                </label>
+                            </p>
+                            <p>
+                                <label for="Sport">
+                                    <span>Sport</span>
+                                    <select id="Sport" class="select">
+                                        <option value=""></option>
+                                        <option value="football">Football</option>
+                                        <option value="rugby">Rugby</option>
+                                    </select>
+                                </label>
+                            </p>
+                            <p>
+                                <label for="Match">
+                                    <span>Match</span>
+                                    <input type="text" id="Match" class="textbox" />
+                                </label>
+                            </p>
+                        </fieldset>
+                    </div>
+                    <div class="inner-panel information">
+                        <fieldset>
+                            <legend>Information</legend>
+                            <p><span>Date</span><span class="date"></span></p>
+                            <p><span>Sport</span><span class="sport"></span></p>
+                            <p><span>Division</span><span class="division"></span></p>
+                            <p><span>Match</span><span class="match"></span></p>
+                        </fieldset>
+                    </div>
+                </div>
+            </div>
+		</div>
+    </body>
+</html>

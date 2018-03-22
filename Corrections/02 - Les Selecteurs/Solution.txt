@@ -1,0 +1,10 @@
+Les cellules du tableau des frameworks											td
+La liste déroulante																select
+La textbox ayant l'identifiant 'email'											#email
+Les cellules ayant la classe CSS 'logo'											td.logo
+Les lignes paires du tableau													tr:even
+La dernière Ville du premier Pays du menu gauche								ul ul:first li:last
+La cellule à droite de la cellule contenant le logo du framework				td.logo + td
+Tous les boutons radio non cochés												input:radio:not(:checked)
+Toutes les cellules contenant le chiffre 1										td:contains('1')
+Toutes les lignes des frameworks ayant la license MIT et pesant 84 kB			tr:has(td:contains('84 kB') + td:contains('MIT'))
