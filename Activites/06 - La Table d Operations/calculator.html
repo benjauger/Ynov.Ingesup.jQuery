@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>AJAX & jQuery - La Table d'Op&eacute;rations</title>
+        <link type="text/css" rel="stylesheet" href="./css/reset.css" />
+        <link type="text/css" rel="stylesheet" href="./css/base.css" />
+        <link type="text/css" rel="stylesheet" href="./css/calculator.css" />
+        <script type="text/javascript" src="./js/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="./js/operation.js"></script>
+        <script type="text/javascript" src="./js/operationPanel.js"></script>
+        <script type="text/javascript" src="./js/operationTable.js"></script>
+        <script type="text/javascript" src="./js/calculator.js"></script>
+    </head>
+    <body>
+		<div class="body">
+            <h1>AJAX & jQuery - La Table d'Op&eacute;rations</h1>
+            <div class="container clearfix">
+                <div class="left panel">
+                    <div class="inner-panel operation-panel">
+                        <fieldset>
+                            <legend>Op&eacute;ration</legend>
+                            <p>
+                                <label for="OperationType">
+                                    <span>Type</span>
+                                    <select id="OperationType" class="select">
+                                        <option value="add">Additionner</option>
+                                        <option value="substract">Soustraire</option>
+                                        <option value="multiply">Multiplier</option>
+                                        <option value="divide">Diviser</option>
+                                    </select>
+                                </label>
+                            </p>
+                            <p>
+                                <label for="OperationValue">
+                                    <span>Valeur</span>
+                                    <input id="OperationValue" type="number" class="textbox" />
+                                </label>
+                            </p>
+                            <p class="actions">
+                                <button id="BtnRandom">Al&eacute;atoire</button>
+                                <button id="BtnAdd">Ajouter</button>
+                            </p>
+                            <hr />
+                            <p>
+                                <label for="OperationNumber">
+                                    <span>Nombre</span>
+                                    <input id="OperationNumber" type="number" class="textbox" value="5" />
+                                </label>
+                            </p>
+                            <p class="actions">
+                                <button id="BtnGenerate">G&eacute;n&eacute;rer</button>
+                            </p>
+                        </fieldset>
+                    </div>
+                </div>
+                <div class="left grid">
+                    <div class="header">
+                        <label for="StartValue">
+                            <span>Valeur de d&eacute;marrage =</span>
+                            <input id="StartValue" type="number" class="textbox" value="100" />
+                        </label>
+                    </div>
+                    <table id="Operations" class="operation-table">
+                        <thead>
+                            <tr>
+                                <th class="delete">&nbsp;</th>
+                                <th class="operation">Op&eacute;ration</th>
+                                <th class="value">Valeur</th>
+                                <th class="result">R&eacute;sultat</th>
+                                <th class="execute"><button id="BtnExecuteAll">Ex&eacute;cuter Tout</button></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+		</div>
+    </body>
+</html>

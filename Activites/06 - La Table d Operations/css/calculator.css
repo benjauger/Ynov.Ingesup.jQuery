@@ -1,0 +1,101 @@
+
+.container {
+    padding: 0 0 20px 0;
+}
+
+.container .panel {
+    margin: 0 20px 0 0;
+    padding: 0;
+}
+
+.container .panel .inner-panel {
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.container .panel .inner-panel .actions {
+    text-align: right;
+}
+
+.container .panel .inner-panel .actions button {
+    padding: 5px 10px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.container .panel fieldset p {
+    padding: 8px 0;
+}
+
+.container .panel fieldset p span {
+    font-size: 0.9em;
+}
+    
+.container .panel fieldset p span:first-child {
+    display: inline-block;
+    width: 100px;
+}
+
+.container .panel fieldset .textbox {
+    width: 150px;
+}
+
+.container .panel fieldset .select {
+    width: 150px;
+}
+
+.container .grid {
+    width: 600px;
+}
+
+.container .grid .header {
+    margin: 10px 0;
+}
+
+.container .grid .header span {
+    width: 230px;
+    display: inline-block;
+    text-align: right;
+}
+
+.container .grid .header .textbox {
+    width: 75px;
+    text-align: center;
+}
+
+.container .grid .operation-table {
+    width: 100%;
+}
+
+.container .grid .operation-table td {
+    text-align: center;
+}
+
+.container .grid .operation-table button {
+    padding: 2px 4px;
+}
+
+.container .grid .operation-table .delete {
+    width: 40px;
+}
+
+.container .grid .operation-table .delete img {
+    cursor: pointer;
+}
+
+.container .grid .operation-table .operation {
+    width: 130px;
+}
+
+.container .grid .operation-table .value {
+    width: 110px;
+}
+
+.container .grid .operation-table .result {
+    width: auto;
+    font-weight: bold;
+}
+
+.container .grid .operation-table .execute {
+    width: auto;
+}
