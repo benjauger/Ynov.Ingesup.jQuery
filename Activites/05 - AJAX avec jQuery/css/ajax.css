@@ -1,0 +1,41 @@
+
+.container {
+    padding: 0 0 20px 0;
+}
+
+.container .panel {
+    width: 500px;
+    margin: 0 20px 0 0;
+    padding: 0;
+}
+
+.container .panel .inner-panel {
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.container .panel fieldset p {
+    padding: 10px 0;
+}
+
+.container .panel fieldset p span {
+    font-size: 0.9em;
+}
+
+.container .panel fieldset p span:first-child {
+    display: inline-block;
+    width: 50px;
+    font-weight: bold;
+}
+
+.container .panel fieldset .textbox {
+    width: 150px;
+}
+
+.container .image {
+}
+
+.container .image img {
+    height: 600px;
+    width: 600px;
+}
