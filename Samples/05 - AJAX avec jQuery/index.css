@@ -1,0 +1,45 @@
+
+.container {
+	padding-bottom: 40px;
+}
+
+.code code {
+    height: 400px;
+    width: 460px;
+    padding: 10px;
+}
+
+.result {
+    height: 400px;
+    width: calc(100% - 520px);
+    padding: 8px;
+    border: solid 2px #333;
+    overflow: auto;
+}
+
+.result h1 {
+    font-size: 1.2em;
+}
+
+.log span {
+    display: inline-block;
+    width: 330px;
+    padding: 0 8px;
+}
+
+.log span:first-child {
+    padding: 0;
+    width: 200px !important;
+}
+
+.log span:last-child {
+    width: auto;
+}
+
+.log .success {
+    color: #007F0E;
+}
+
+.log .error {
+    color: #F00;
+}

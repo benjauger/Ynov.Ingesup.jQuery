@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>AJAX & jQuery - AJAX avec jQuery</title>
+        <link type="text/css" rel="stylesheet" href="../reset.css" />
+        <link type="text/css" rel="stylesheet" href="../base.css" />
+        <link rel="stylesheet" href="../_libs/highlight/styles/atom-one-dark.css">
+        <link type="text/css" rel="stylesheet" href="index.css" />
+        <script type="text/javascript" src="../_libs/highlight/highlight.pack.js"></script>
+        <script type="text/javascript" src="../_libs/jquery-3.3.1.min.js"></script>
+        <script type="text/javascript" src="method.js"></script>
+        <script type="text/javascript" src="index.js"></script>
+    </head>
+    <body>
+		<div class="body">
+            <h1>AJAX & jQuery - AJAX avec jQuery</h1>
+            <div class="container">
+                <div class="clearfix">
+                    <div class="left code">
+                        <pre><code id="Code" class="javascript"></code></pre>
+                    </div>
+                    <div id="Result" class="right result">
+                    </div>
+                </div>
+                <div class="actions clearfix">
+                    <div class="left">
+                        <select id="Method">
+                            <option value="ajaxGet">ajax (GET)</option>
+                            <option value="ajaxPost">ajax (POST)</option>
+                            <option>getJSON</option>
+                            <option selected="selected">load</option>
+                        </select>
+                        <input id="Url" type="text" class="textbox" placeholder="Type URL..." spellcheck="false" />
+                        <button id="Execute">Execute</button>
+                    </div>
+                </div>
+                <div class="log"><div id="Eraser" class="eraser"></div></div>
+            </div>
+		</div>
+    </body>
+</html>
